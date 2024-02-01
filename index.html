@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <title>Age calculator | Jehan</title>
+
+</head>
+
+<body>
+  <header>
+    <div class="day">
+      <label id="daytxt" for="day">DAY</label>
+      <input min="1" max="31" placeholder="DD" id="day">
+      <label class="labelerror" id="errorday"></label>
+    </div>
+    <div class="month">
+      <label id="monthtxt" for="month">MONTH</label>
+      <input min="1" max="12" placeholder="MM" id="month">
+      <label class="labelerror" id="errormonth"></label>
+    </div>
+    <div class="year">
+      <label id="yeartxt" for="year">YEAR</label>
+      <input placeholder="YYYY" id="year">
+      <label class="labelerror" id="erroryear"></label>
+    </div>
+  </header>
+  <div class="separador">
+    <div></div>
+    <img src="./assets/images/icon-arrow.svg" alt="boton" onclick="click_()">
+  </div>
+  <main>
+    <div>
+      <spam class="numbclass" id="txtyears">--</spam>
+      <spam>years</spam>
+    </div>
+    <div>
+      <spam class="numbclass" id="txtmonths">--</spam>
+      <spam>months</spam>
+    </div>
+    <div>
+      <spam class="numbclass" id="txtdays">--</spam>
+      <spam>days</spam>
+    </div>
+  </main>
+  <div class="attribution">
+    Coded by <a href="https://github.com/Jank1510">Jehan Carlos Hurtado Guerrero</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
